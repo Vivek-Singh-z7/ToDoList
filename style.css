@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    list-style: none;
+    border: none;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, red, blue);
+}
+
+.mainContainer {
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.301);
+    backdrop-filter: blur;
+    border-radius: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1vw;
+}
+
+#heading {
+    margin: 1vw;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 900;
+    color: #fff;
+}
+
+.inputArea {
+    height: 4vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+#textInputArea {
+    height: 100%;
+    width: 100%;
+    font-size: 1.4vw;
+    padding-left: 1vw;
+}
+
+#taskAddBtn {
+    height: 100%;
+    font-size: 1.4vw;
+    color: #fff;
+    font-weight: 800;
+    background-color: rgb(51, 255, 51);
+    width: 18%;
+}
+
+.taskContainer {
+    width: 100%;
+    min-height: 4vw;
+    max-height: 20vw;
+    margin-top: 1vw;
+    background-color: rgb(222, 222, 222);
+    border-radius: 1vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0.5vw 1vw;
+}
+
+.taskContainer li {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 1vw;
+    min-height: 4vw;
+    padding: 0.5vw;
+    background: #fff;
+    border-bottom: 1px solid rgb(74, 74, 74);
+    margin: 6px 0;
+}
+
+.task {
+    font-size: 1.5vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.done {
+    height: 80%;
+    width: 15%;
+    background-color: darkturquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 600;
+    margin: 0 0.5vw;
+}
+
+.delete {
+    width: 15%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    color: white;
+    background-color: red;
+
+}
+
+
+@media (max-width : 600px) {
+    .mainContainer {
+        width: 70vw;
+        backdrop-filter: blur;
+        border-radius: 1vw;
+        top: 30vh;
+        padding: 5vw;
+    }
+
+
+    #heading {
+        margin: 1vw;
+        text-align: center;
+        font-size: 6vw;
+        font-weight: 900;
+        color: #fff;
+    }
+
+    .inputArea {
+        height: 8vw;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 1vw;
+        overflow: hidden;
+    }
+
+    #textInputArea {
+        height: 100%;
+        width: 100%;
+        font-size: 2vw;
+        padding-left: 2vw;
+    }
+
+    #taskAddBtn {
+        height: 100%;
+        font-size: 3vw;
+        color: #fff;
+        font-weight: 800;
+        background-color: rgb(51, 255, 51);
+        width: 30%;
+    }
+
+    .taskContainer {
+        width: 100%;
+        min-height: 6vw;
+        max-height: 30vw;
+        margin-top: 2vw;
+        background-color: rgb(222, 222, 222);
+        border-radius: 1vw;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0 1vw;
+    }
+
+    .taskContainer li {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border-radius: 1vw;
+        min-height: 5vw;
+        padding: 1vw;
+        background: #fff;
+        border-bottom: 1px solid rgb(74, 74, 74);
+        margin: 1vw 0;
+    }
+
+    .task {
+        font-size: 2vw;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .done {
+        height: 80%;
+        width: 15%;
+        background-color: darkturquoise;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2vw;
+        border-radius: 1vw;
+        font-size: 1.5vw;
+        color: white;
+        font-weight: 600;
+        margin: 0 0.5vw;
+    }
+
+    .delete {
+        width: 15%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        padding: 2vw;
+        border-radius: 1vw;
+        font-size: 1.5vw;
+        color: white;
+        background-color: red;
+
+    }
+
+}
